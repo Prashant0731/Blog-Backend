@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.dataoct.technologies.blog.SpringNgBlogApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.547 s - in com.dataoct.technologies.blog.SpringNgBlogApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.715 s - in com.dataoct.technologies.blog.SpringNgBlogApplicationTests
