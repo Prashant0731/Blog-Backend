@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Blog-Backend
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: chauhan.prashant
+Implementation-Vendor-Id: com.dataoct.technologies.blog
+Build-Jdk: 1.8.0_251
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Blog-Backend
+Created-By: Maven Integration for Eclipse
+
