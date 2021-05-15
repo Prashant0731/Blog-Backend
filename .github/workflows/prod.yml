@@ -16,6 +16,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: prashant0731/blog-backend
+        repository: dataoct/blog-backend
         dockerfile: Dockerfile
         tags: latest
