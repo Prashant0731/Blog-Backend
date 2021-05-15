@@ -1,0 +1,21 @@
+name: Build backend container for prod & push to dockerhub
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    
+    - name: build and push docker image
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: prashant0731/blog-backend
+        dockerfile: Dockerfile
+        tags: latest
