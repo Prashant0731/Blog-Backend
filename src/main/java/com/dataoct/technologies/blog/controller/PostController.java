@@ -19,7 +19,9 @@ public class PostController {
 
     @PostMapping
     public ResponseEntity createPost(@RequestBody PostDto postDto) {
+    	System.out.println(" Start | PostController | public ResponseEntity createPost(@RequestBody PostDto postDto) ");
         postService.createPost(postDto);
+    	System.out.println(" End   | PostController | public ResponseEntity createPost(@RequestBody PostDto postDto) ");
         return new ResponseEntity(HttpStatus.OK);
     }
 

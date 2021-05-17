@@ -18,7 +18,10 @@ public class Post {
     @Column
     @NotEmpty
     private String content;
+    @NotBlank
     @Column
+    private String subject;   
+	@Column
     private Instant createdOn;
     @Column
     private Instant updatedOn;
@@ -49,6 +52,14 @@ public class Post {
     public void setContent(String content) {
         this.content = content;
     }
+
+    public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
 
     public Instant getCreatedOn() {
         return createdOn;
