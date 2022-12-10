@@ -7,7 +7,7 @@ spring:
     host: db
     username: postgres
     password: postgres
-    url: jdbc:postgresql://localhost:5433/dataoct_blog
+    url: jdbc:postgresql://localhost:5432/dataoct_blog
 #    url: jdbc:postgresql://postgres.cinew4p4evkr.ap-south-1.rds.amazonaws.com:5432/postgres
 #    url: jdbc:postgresql://database-1.cabk1wrl7cht.ap-south-1.rds.amazonaws.com:5432/postgres
     platform: postgres
