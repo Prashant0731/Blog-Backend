@@ -2,7 +2,6 @@ FROM maven:3.8.6-openjdk-8
 
 RUN mkdir -p /root/.m2 \
     && mkdir /root/.m2/repository
-COPY settings.xml /root/.m2
 
 WORKDIR /usr/src/app
 ADD . .
@@ -15,7 +14,7 @@ RUN mvn clean package \
     
 RUN mkdir /usr/src/build
 RUN cp target/*.jar /usr/src/build/
-RUN ls -la /usr/src/build/    
+RUN ls -la /usr/src/build/
 
 FROM openjdk:8-jre-slim-stretch
 RUN \
