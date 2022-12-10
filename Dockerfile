@@ -1,4 +1,4 @@
-FROM 3.8.6-openjdk-8
+FROM maven:3.8.6-openjdk-8
 
 RUN mkdir -p /root/.m2 \
     && mkdir /root/.m2/repository
