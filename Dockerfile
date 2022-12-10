@@ -28,5 +28,5 @@ WORKDIR /usr/src/app
 COPY --from=0 /usr/src/build/*.jar /usr/src/app/
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar","/Blog-Backend-0.0.1-SNAPSHOT.jar", "--spring.profiles.active=docker"]
+ENTRYPOINT ["java", "-jar","/app.jar", "--spring.profiles.active=docker"]
 
